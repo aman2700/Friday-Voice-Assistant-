@@ -13,4 +13,4 @@ It's a personal voice assistant app coded in python which accepts users' voice c
 - Twilio
 - Getpass4
 - Chrome or Gecko driver
-- A working microphone
+- A working microphone & speaker.
