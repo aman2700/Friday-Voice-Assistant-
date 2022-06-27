@@ -14,21 +14,21 @@ import smtplib #
 
 
 def send_sms(ok, num):
-    account_sid = 'ACb4c5b72db166a775d609ed9b40e525e3'
-    auth_token = '97a28d3fb683b83f67b22aab5d56bb1d'
+    account_sid = 'xxxxxxxxxxxxxxxx'
+    auth_token = 'xxxxxxxxxxxx'
     client = Client(account_sid, auth_token)
     
     message = client.messages \
                     .create(
                         body= ok,
-                        from_='+19386666645',
+                        from_='+19xxxxxx87',
                         to= num
                     )
 
     #print(message.sid)
 def phone(nump, say):
-    account_sid = 'ACb4c5b72db166a775d609ed9b40e525e3'
-    auth_token = '97a28d3fb683b83f67b22aab5d56bb1d'
+    account_sid = 'XXXXXXXXXXXXXXXXX'
+    auth_token = 'XXXXXXXXXXXXXXXXX'
     client = Client(account_sid, auth_token)
 
     call = client.calls.create(
@@ -44,8 +44,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('nishasxxxxxxxxx@gmail.com', 'xxxxxxx')
-    server.sendmail('nishashxxxxxxxxxxx@gmail.com', to, content)
+    server.login('nisXasxxxxxxxxx@gmail.com', 'xxxxxxx')
+    server.sendmail('nisXashxxxxxxxxxxx@gmail.com', to, content)
     server.close()
 
 class person:
